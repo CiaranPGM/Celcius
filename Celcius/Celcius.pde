@@ -17,7 +17,7 @@ void draw() {
   cloud();
   printTemperatureData();
   co2Data();
-  yearCounter();   
+  yearCounter(); 
 
   // Snow draw code
   noStroke();

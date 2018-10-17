@@ -2,7 +2,7 @@ void cloud() {
   
   
   // Cloud movement
-  cloudX = cloudX - cloudSpeed;
+ 
   
   
   // When cloud goes off screen, reset position

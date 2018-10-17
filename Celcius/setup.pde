@@ -33,12 +33,12 @@ void setup() {
   ground2Y = 550;
   groundLength = 750;
   ground2Length = 750;
-  groundSpeed = 4;
+  groundSpeed = 7;
 
 
   cloudX = 1800;
   cloudY = 10;
-  cloudSpeed = 5;
+  cloudSpeed = 4;
 
   //r = 28;
   //g = 0;

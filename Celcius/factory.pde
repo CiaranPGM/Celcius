@@ -1,63 +1,66 @@
-int x1=740;
+int x1=4000;
 int y1=300;
 void factorymain (){
   //stroke(0);
   //building 1 + hall
-beginShape();
-fill(80);
-vertex (x1-610,y1+170);
-vertex (x1-610,y1+80);
-vertex (x1-587,y1+66);
-vertex (x1-564,y1+85);
-vertex (x1-564,y1+170);
-curveVertex(x1-576,  y1+80);
-curveVertex(x1-576,  y1+100);
-curveVertex(x1-573,  y1+62);
-curveVertex(x1-566,  y1+62);
-curveVertex(x1-564, y1+170);
-curveVertex(x1-564, y1+100);
-endShape();
-//pipe
-beginShape();
-vertex (x1-573,y1+62);
-vertex (x1-592,y1+62);
-vertex (x1-592,y1+66);
-vertex (x1-573,y1+66);
-endShape();
-//building near building
- beginShape();
- noStroke();
-vertex (x1-564,y1+100);
-vertex (x1-560,y1+100);
-vertex (x1-560,y1+110);
-vertex (x1-555,y1+110);
-vertex (x1-555,y1+130);
-vertex (x1-564,y1+130);
-endShape();
-//the lowest building
-beginShape();
-noStroke();
-vertex (x1-555,y1+115);
-vertex (x1-545,y1+112);
-vertex (x1-545,y1+120);
-vertex (x1-555,y1+120);
-endShape();
-//row-building
-noStroke();
-rect(x1-545,y1+110, 130, 40, 0, 0, 0, 0);
-//upper row-building
-rect(x1-545,y1+100, 100, 40, 0, 0, 0, 0);
-//each top hall in row-building
-beginShape();
-vertex (x1-545,y1+100);
-vertex (x1-545,y1+95);
-vertex (x1-540,y1+95);
-vertex (x1-540,y1+100);
-vertex (x1-500,y1+100);
-vertex (x1-500,y1+90);
-vertex (x1-490,y1+90);
-vertex (x1-490,y1+100);
-endShape();
+  beginShape();
+    fill(80);
+    vertex (x1-610,y1+170);
+    vertex (x1-610,y1+80);
+    vertex (x1-587,y1+66);
+    vertex (x1-564,y1+85);
+    vertex (x1-564,y1+170);
+    curveVertex(x1-576,  y1+80);
+    curveVertex(x1-576,  y1+100);
+    curveVertex(x1-573,  y1+62);
+    curveVertex(x1-566,  y1+62);
+    curveVertex(x1-564, y1+170);
+    curveVertex(x1-564, y1+100);
+  endShape();
+  
+  //pipe
+  beginShape();
+    vertex (x1-573,y1+62);
+    vertex (x1-592,y1+62);
+    vertex (x1-592,y1+66);
+    vertex (x1-573,y1+66);
+  endShape();
+  //building near building
+   beginShape();
+   noStroke();
+    vertex (x1-564,y1+100);
+    vertex (x1-560,y1+100);
+    vertex (x1-560,y1+110);
+    vertex (x1-555,y1+110);
+    vertex (x1-555,y1+130);
+    vertex (x1-564,y1+130);
+  endShape();
+  
+  //the lowest building
+  beginShape();
+  noStroke();
+    vertex (x1-555,y1+115);
+    vertex (x1-545,y1+112);
+    vertex (x1-545,y1+120);
+    vertex (x1-555,y1+120);
+  endShape();
+  
+  //row-building
+  noStroke();
+  rect(x1-545,y1+110, 130, 40, 0, 0, 0, 0);
+  //upper row-building
+  rect(x1-545,y1+100, 100, 40, 0, 0, 0, 0);
+  //each top hall in row-building
+  beginShape();
+    vertex (x1-545,y1+100);
+    vertex (x1-545,y1+95);
+    vertex (x1-540,y1+95);
+    vertex (x1-540,y1+100);
+    vertex (x1-500,y1+100);
+    vertex (x1-500,y1+90);
+    vertex (x1-490,y1+90);
+    vertex (x1-490,y1+100);
+  endShape();
 
 //highest hall
 beginShape();
@@ -68,7 +71,6 @@ vertex (x1-479,y1+100);
 endShape();
 
 // small hall near highest R triangle
-
 beginShape();
 vertex (x1-478,y1+100);
 vertex (x1-472,y1+95);
@@ -135,6 +137,7 @@ curve(x1+110, y1+50, x1+45, y1-15, x1+120, y1+72, x1+130, y1-50);
 curve(x1+120, y1+50, x1+45, y1-15, x1+80, y1+72, x1+70, y1-50);
 noStroke();
 }
+
 /////////////////////////fac3////////////
 void fac3(){
   //base 2 sides

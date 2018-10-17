@@ -27,9 +27,16 @@ void platform() {
 
 
   // Platform movement
-  groundX = groundX - groundSpeed;
-  ground2X = ground2X - groundSpeed;
+  //This can be moved into a seperate class or function to do with movement
+  if(keyPressed == true){
+    if(key == 'd'){
+      groundX = groundX - groundSpeed;
+      ground2X = ground2X - groundSpeed;
+      x1 = x1 - groundSpeed;
+      cloudX = cloudX - cloudSpeed;
 
+    }
+  }
 
   // When platforms go off screen, reset position. Also determines y location and length of platforms that spawn (randomised).
   if (groundX < -2500) {
