@@ -32,14 +32,14 @@ void platform() {
 
 
   // When platforms go off screen, reset position. Also determines y location and length of platforms that spawn (randomised).
-  if (groundX < -700) {
+  if (groundX < -2500) {
     groundX = 1920;
     groundY = random(550, 450);
     groundLength = random(700, 800);
   }
 
 
-  if (ground2X < -700) {
+  if (ground2X < 2500) {
     ground2X = 1920;
     ground2Y = random(550, 450);
     ground2Length = random(750, 800);
