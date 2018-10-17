@@ -10,11 +10,14 @@ void draw() {
   //*The image function below drastically affects fps*
   //image(background, 0, 0, 1920, 350);
   backGroundAir();
+  pollution();
+  factorymain();
+  fac3();  
   platform();
   cloud();
   printTemperatureData();
   co2Data();
-  yearCounter();
+  yearCounter();   
 
   // Snow draw code
   noStroke();
@@ -85,4 +88,5 @@ void draw() {
       ice = ice +1;
     }  
   }
+   
 }

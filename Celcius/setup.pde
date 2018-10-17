@@ -51,5 +51,10 @@ void setup() {
   co2_data  =  1; 
   year_counter  =  1;
   
+  //pollution set up
+      for(int i = 0; i < 1000; i++){
+dusts.add(new Dust(new PVector(x1, 100), new PVector(x1, 0), random(10, 30)));
+}
+  
 
 }
