@@ -33,12 +33,12 @@ void setup() {
   ground2Y = 550;
   groundLength = 750;
   ground2Length = 750;
-  groundSpeed = 7;
+  groundSpeed = 4;
 
 
   cloudX = 1800;
   cloudY = 10;
-  cloudSpeed = 4;
+  cloudSpeed = 5;
 
   //r = 28;
   //g = 0;
@@ -47,14 +47,23 @@ void setup() {
   sealevel =1 ; 
   ice=1; 
   backgroundcolour  =1; 
-    
+
   co2_data  =  1; 
   year_counter  =  1;
   
   //pollution set up
-      for(int i = 0; i < 1000; i++){
-dusts.add(new Dust(new PVector(x1, 100), new PVector(x1, 0), random(10, 30)));
-}
-  
+  for(int i = 0; i < 1000; i++){
+  dusts.add(new Dust(new PVector(x1, 100), new PVector(x1, 0), random(10, 30)));
+  }
 
+  // my addition
+  imageMode(CENTER);
+  minim = new Minim(this);
+  jump = minim.loadFile("jump.mp3");
+  //bg = loadImage("bg.jpg"); //https://openclipart.org/image/2400px/svg_to_png/299976/Dinosaur3.png
+  bear = loadImage("1.png"); //https://mbtskoudsalg.com/images/star-cartoon-png-8.png
+  playerPos = new PVector(width*0.3, height*0.28);
+  //bg.resize(width, height);
+  vel = new PVector(0, 0);
+  back_pos = width/2;
 }

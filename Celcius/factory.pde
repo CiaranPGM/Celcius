@@ -1,5 +1,5 @@
 int x1=4000;
-int y1=300;
+int y1=275;
 void factorymain (){
   //stroke(0);
   //building 1 + hall
@@ -136,6 +136,8 @@ curve(x1-60, y1-50, x1-30, y1-15, x1-70, y1+72, x1-200, y1+50);
 curve(x1+110, y1+50, x1+45, y1-15, x1+120, y1+72, x1+130, y1-50);
 curve(x1+120, y1+50, x1+45, y1-15, x1+80, y1+72, x1+70, y1-50);
 noStroke();
+
+x1 = x1 - groundSpeed;
 }
 
 /////////////////////////fac3////////////

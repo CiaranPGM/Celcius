@@ -38,3 +38,16 @@ int co2_data;
 int year_counter; 
 
 int temperatureScroll;
+
+
+// my addition
+import ddf.minim.*;
+
+Minim minim;
+AudioPlayer jump;
+boolean right, left, up;
+PImage bg, bear;
+int dir = -1;
+int back_pos;
+PVector playerPos, acc, vel;
+long tm;

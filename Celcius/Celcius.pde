@@ -4,8 +4,6 @@
 // and snowfall that can be controlled with a 'quantity' variable
 
 void draw() {
-
-
   // Load gradient background image and call functions
   //*The image function below drastically affects fps*
   //image(background, 0, 0, 1920, 350);
@@ -17,7 +15,7 @@ void draw() {
   cloud();
   printTemperatureData();
   co2Data();
-  yearCounter(); 
+  yearCounter();
 
   // Snow draw code
   noStroke();
@@ -78,15 +76,27 @@ void draw() {
       sealevel = sealevel + 1;
     }
   }
-  
+
   int gapLength = 0;
   while (gapLength < 200)
   {
     gapLength++;
-    if(gapLength ==3)
+    if (gapLength ==3)
     {
       ice = ice +1;
-    }  
+    }
   }
-   
+
+  // my addition
+  if (right) {
+    dir = -1;
+    back_pos -= 2;
+  }
+  if (left) {
+    dir = 1;
+    back_pos += 2;
+  }
+
+  update();
+  player();
 }
